@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div class="d-inline-flex w-100 text-center shadow p-3" style="background-color: rgb(55 210 255 / 20%)">
+    <a href="/" class="btn btn-dark position-absolute" style="padding: 15px">&lt; Назад</a>
+    <h1 class="w-100">Вход в систему</h1>
+</div>
+<div th:if="${param.logout}" class="fw-bold text-center p-4">Вы вышли из системы!</div>
+<div id="login"></div>
+<script th:src="@{/js/login.js}"></script>
+</body>
+</html>
